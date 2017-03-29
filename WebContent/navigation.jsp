@@ -3,7 +3,7 @@
 <%@ page import="com.actionForm.ManagerForm"%>
 <%
 ManagerDAO managerDAO=new ManagerDAO();
-ManagerForm form1=(ManagerForm)managerDAO.query_p(manager);
+ManagerForm form1=(ManagerForm)managerDAO.query_p("manager");
 int sysset1=0;
 int readerset1=0;
 int bookset1=0;
