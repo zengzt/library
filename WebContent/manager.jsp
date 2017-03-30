@@ -48,7 +48,7 @@ if(coll==null || coll.isEmpty()){
   %>
  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="84%">&nbsp;      </td>
+    <td width="84%">&nbsp;</td>
 <td width="16%">
       <a href="#" onClick="window.open('manager_add.jsp','','width=292,height=175')">添加管理员信息</a> </td>	  
   </tr>

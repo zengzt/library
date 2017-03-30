@@ -3,7 +3,7 @@
 <%@ page import="com.actionForm.ManagerForm"%>
 <%
 ManagerDAO managerDAO=new ManagerDAO();
-ManagerForm form1=(ManagerForm)managerDAO.query_p("manager");
+ManagerForm form1=(ManagerForm)managerDAO.query_p(manager);
 int sysset1=0;
 int readerset1=0;
 int bookset1=0;
@@ -16,7 +16,6 @@ if(form1!=null){
 	borrowback1=form1.getBorrowback();
 	sysquery1=form1.getSysquery();
 }
-
 %>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <script src="JS/onclock.JS"></script>

@@ -184,6 +184,7 @@ try {
 conn.close();
 return coll;
     }
+
       //*************************Õº ÈΩË‘ƒ≈≈––******************************************
     public Collection bookBorrowSort() {
        String sql = "select * from (SELECT bookid,count(bookid) as degree FROM tb_borrow group by bookid) as borr join (select b.*,c.name as bookcaseName,p.pubname,t.typename from tb_bookinfo b left join tb_bookcase c on b.bookcase=c.id join tb_publishing p on b.ISBN=p.ISBN join tb_booktype t on b.typeid=t.id where b.del=0) as book on borr.bookid=book.id order by borr.degree desc limit 10 ";

@@ -35,10 +35,12 @@
     </init-param>
     <load-on-startup>0</load-on-startup>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>action</servlet-name>
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
+  
   <!-- 设置默认文件名称 -->
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>

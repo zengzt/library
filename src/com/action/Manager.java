@@ -41,8 +41,8 @@ public class Manager extends Action {
 		return mapping.findForward("error");
 	}
 
+	
 	// 管理员身份验证
-
 	public ActionForward managerLogin(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
 		ManagerForm managerForm = (ManagerForm) form;
