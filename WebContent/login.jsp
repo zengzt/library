@@ -7,10 +7,14 @@
 <script language="javascript">
 function check(form){
 	if (form.name.value==""){
-		alert("请输入管理员名称!");form.name.focus();return false;
+		alert("请输入管理员名称!");
+		form.name.focus();
+		return false;
 	}
 	if (form.pwd.value==""){
-		alert("请输入密码!");form.pwd.focus();return false;
+		alert("请输入密码!");
+		form.pwd.focus();
+		return false;
 	}	
 }
 </script>
@@ -31,7 +35,8 @@ function check(form){
   <tr>
     <td valign="top"><table width="100%" height="525"  border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="523" align="center" valign="top"><table width="100%" height="271"  border="0" cellpadding="0" cellspacing="0">
+    <td height="523" align="center" valign="top">
+    <table width="100%" height="271"  border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td height="271" align="right" valign="top" class="word_orange"><table width="100%" height="255"  border="0" cellpadding="0" cellspacing="0" background="Images/login.jpg">
           <tr>
@@ -64,7 +69,8 @@ function check(form){
                     </tr>
                         <tr>
                           <td height="30">&nbsp;</td>
-                      <td colspan="2" align="center"><input name="Submit" type="submit" class="btn_grey" value="确定" onClick="return check(form1)">
+                      <td colspan="2" align="center">
+                      	<input name="Submit" type="submit" class="btn_grey" value="确定" onClick="return check(form1)">
                         &nbsp;
                         <input name="Submit3" type="reset" class="btn_grey" value="重置">&nbsp;
                         <input name="Submit2" type="button" class="btn_grey" value="关闭" onClick="window.close();"></td>
